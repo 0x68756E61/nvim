@@ -1,3 +1,4 @@
+local rt = require('rust-tools')
 local opts = {
   tools = { -- rust-tools options
 
@@ -181,4 +182,4 @@ local opts = {
   },
 }
 
-require('rust-tools').setup(opts)
+rt.setup(opts)
