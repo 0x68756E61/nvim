@@ -4,10 +4,8 @@ local lsp = require('lsp-zero')
 lsp.preset('recommended')
 
 lsp.ensure_installed({
-	'tsserver',
 	'rust_analyzer',
-	'sumneko_lua',
-	'jdtls',
+    'pyright',
 })
 
 local cmp = require('cmp')
