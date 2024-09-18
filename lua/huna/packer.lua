@@ -18,12 +18,12 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
+  use ({
+      'shaunsingh/nord.nvim',
+      as = 'nord',
 	  config = function()
-		  require("rose-pine").setup()
-		  vim.cmd('colorscheme rose-pine')
+		  require("nord").setup()
+		  vim.cmd('colorscheme nord')
 	  end
   })
 
