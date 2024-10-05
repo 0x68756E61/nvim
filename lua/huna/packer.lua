@@ -18,14 +18,7 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use ({
-      'shaunsingh/nord.nvim',
-      as = 'nord',
-	  config = function()
-		  require("nord").setup()
-		  vim.cmd('colorscheme nord')
-	  end
-  })
+  use('shaunsingh/nord.nvim')
 
   use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'})
 
@@ -59,4 +52,7 @@ return require('packer').startup(function(use)
 
   use('lewis6991/gitsigns.nvim')
   use('nvim-lualine/lualine.nvim')
+
+  use('nvim-tree/nvim-tree.lua')
+  use('nvim-tree/nvim-web-devicons')
 end)
